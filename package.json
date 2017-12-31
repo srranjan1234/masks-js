@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/srranjan1234/masks-js.git"
   },
+  "scripts": {
+    "build": "babel ./src -d ./lib"
+    
+  },
   "keywords": [
     "npm",
     "node",
@@ -21,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/srranjan1234/masks-js/issues"
   },
-  "homepage": https://github.com/srranjan1234/masks-js#readme"
+  "homepage": "https://github.com/srranjan1234/masks-js#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
 }
