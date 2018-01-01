@@ -5,8 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "build": "babel ./src -d ./lib",
-    "test": "nyc mocha --require babel-core/register",
-    "prepublishOnly": "npm run build"
+    "test": "nyc mocha --require babel-core/register"
   },
   "repository": {
     "type": "git",
