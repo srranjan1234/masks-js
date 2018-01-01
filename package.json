@@ -1,18 +1,12 @@
 {
-  "name": "masks-js",
+  "name": "first-rajiv-js",
   "version": "0.0.1",
   "description": "A NPM package that exports functions to mask values.",
   "main": "build/index.js",
-  "nyc": {
-    "reporter": [
-      "lcov",
-      "text"
-    ]
-  },
   "scripts": {
-    "build": "npm run lint && babel ./src -d ./lib",
-    "lint": "eslint ./src",
-	"test": "nyc mocha --require babel-core/register"
+    "build": "babel ./src -d ./lib",
+    "test": "nyc mocha --require babel-core/register",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -37,5 +31,14 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "mocha": "^4.1.0"
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  },
+  "dependencies": {
+    "nyc": "^11.4.1"
   }
 }
