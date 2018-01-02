@@ -3,3 +3,13 @@ node_js:
 - node
 before_deploy:
 - npm run build
+deploy:
+  # Following line added manually at end
+  skip_cleanup: true
+  provider: npm
+  email: srranjan1234@gmail.com
+  api_key:
+    secure: hC9a5YRyNInhKIZehCgUgYDR73NA7Qt2/i96lqzdthnv2NuGaZlQuFhIuV19DVmKVkmWgx1MkhMWeICM3Cm1mRPcAF5KWBpkLCrQRExFIfBs1vcqTo0zPpPKfBPDxF/KPpxnTfe9pyYM0nb4LNahMZFPRdXGZLIhiUxtuluB2liZEh40yBk8KmPxAcQk/CAwkv6kSuvizXk3R35EBSgH8smF/I1VggeIwNT4X2mUW+VaAUV+AYaDit6wVvx6VQObEbRw3O3HKVyp3szFkeeo4RpT2iWb0QCPtYwMvILv8STA81UVhPe2ANDvMqTV890ONaGQlWlXqdjd7a9BiIlAMLpdYNm8EhXENP3Td41otXtwNoPSueKAeWJ/2y6f+et0HnHSbmzT7VUvdATcRkHkeawhjRTrok7zqN5CvTqAw01TXK3Wqo550+S2evfutSqrIndcEkwKRZuqeyTDzMRnAHyTgu+yazZj45FTbrDQxNdBv5spTSRW0D00005zbh3fOunDOe0AGqe/n8OcwTfZ22RQlXHiBED5zZVt5LSVTUg0U/pQnUqHQ0yGD0Q+NQgq0Q19beZGB7owSvapGdBqqRVGNtQ6XsyRZ1dJHIcUputyu2iijKrOtOOxVEsK3umqFI6z/ryGfejFdL7pCqZaLif8uUlOo3CYme0gYSoCZms=
+  on:
+    tags: true
+    repo: srranjan1234/masks-js
